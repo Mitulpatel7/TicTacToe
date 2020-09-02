@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="#AA9C9C"
+    tools:context=".Input_Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_txt"
+        android:text="Enter player's name"
+        android:fontFamily="monospace"
+        android:textColor="#363e4b"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_below="@id/input_txt"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        app:mtf_animationDuration="300"
+        app:mtf_labelColor="@android:color/white"
+        app:mtf_backgroundColor="#363e4b"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/p1"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:hint="Player 1"
+            android:id="@+id/player1"
+            android:fontFamily="monospace"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textColorHint="#363e4b"/>
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_below="@id/p1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/p2"
+        android:layout_centerHorizontal="true"
+        app:mtf_animationDuration="300"
+        app:mtf_labelColor="@android:color/white"
+        app:mtf_backgroundColor="#363e4b"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:hint="Player 2"
+            android:id="@+id/player2"
+            android:fontFamily="monospace"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textColorHint="#363e4b"/>
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:id="@+id/start_game"
+        android:background="#363e4b"
+        android:layout_below="@id/p2"/>
+
+</RelativeLayout>
